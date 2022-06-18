@@ -51,6 +51,17 @@
   }
 </style>
 
+<script>
+  function clickEffect(e){
+    var d=document.createElement("div");
+    d.className="clickEffect";
+    d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+    document.body.appendChild(d);
+    d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+  }
+  document.addEventListener('click',clickEffect);
+</script>
+
   <div id="intro">
     <p><img src="img/logo_wh.png" alt="INMYHEART"></p>
   </div>
@@ -61,6 +72,12 @@
       <div id="particles"></div>
     </header>
     <main>
+      <br>
+      <br>
+      <br>
+      <div style="text-align:center; margin:30px auto auto; color:#a1a8ba; font-size:11px;">
+        A world of dreams and imagination that lay beneath the music.
+      </div>
       <section id="tracklist">
         <h1>Tracklist</h1>
         <div class="inner">
