@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89095699-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-89095699-5');
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>In My Heart | Silentroom</title>
+  <link rel="stylesheet" type="text/css" href="common/css/import.css">
+</head>
+<body>
+
+<div class="cursor"></div>
+<script type="text/javascript">
+  const cursor = document.querySelector(".cursor");
+  var timeout;
+
+  //follow cursor on mousemove
+  document.addEventListener("mousemove", (e) => {
+    let x = e.pageX;
+    let y = e.pageY;
+
+    cursor.style.top = y + "px";
+    cursor.style.left = x + "px";
+    cursor.style.display = "block";
+
+    //cursor effects when mouse stopped
+    function mouseStopped(){
+      cursor.style.display = "none";
+    }
+    clearTimeout(timeout);
+    timeout = setTimeout(mouseStopped, 1000);
+  });
+
+  //cursor effects when mouseout
+  document.addEventListener("mouseout", () => {
+    cursor.style.display = "none";
+  });
+</script>
+
+  <div id="intro">
+    <p><img src="img/logo_wh.png" alt="INMYHEART"></p>
+  </div>
+
+  <div class="wrapper">
+    <header>
+      <h1><img src="img/logo.png" alt="Silentroom 2nd Album"></h1>
+      <div id="particles"></div>
+    </header>
+    <main>
+
+      <section id="tracklist">
+        <h1>Tracklist</h1>
+        <div class="inner">
+          <div class="soundcloud">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1252266601&color=ff6600&auto_play=false&show_artwork=true"></iframe>
+          </div>
+          <div class="disc">
+            <h2>DISC.1</h2>
+            <ul>
+              <li><i>1</i>META-morphose<span>Silentroom</span></li>
+              <li><i>2</i>In My Heart<span>Silentroom</span></li>
+              <li><i>3</i>Untrodden Morn ("Uncharted" Full Version)<span>Silentroom</span></li>
+              <li><i>4</i>9876734123 ("Hyperprime" Full Version)<span>Silentroom</span></li>
+              <li><i>5</i>Random ("Take #8" Full Version)<span>Sobrem & Silentroom</span></li>
+              <li><i>6</i>B-9 syndrome<span>Silentroom</span></li>
+              <li><i>7</i>Fallensquare ("Arcade" Full Version)<span>Silentroom</span></li>
+              <li><i>8</i>The Deliverer<span>Silentroom</span></li>
+              <li><i>9</i>X7124 ("The Blue" Full Version)<span>Silentroom</span></li>
+              <li><i>10</i>Sense ("Leads to Another" Full Version)<span>BilliumMoto & Silentroom</span></li>
+            </ul>
+          </div>
+          <div class="disc">
+            <h2>DISC.2</h2>
+            <ul>
+              <li><i>1</i>驟雨の狭間<span><em>Rainshower</em></span><q>Silentroom</q></li>
+              <li><i>2</i>晨星ト鵺 ("Daybreaker" Full Version)<span><em>The Nue and Morning Stars</em></span><q>Silentroom</q></li>
+              <li><i>3</i>Ammon's Scotoma</b><span>Silentroom</span></li>
+              <li><i>4</i>Aegleseeker ("Afterworld" Full Version)<span>Silentroom vs Frums</span></li>
+              <li><i>5</i>META-morphose (BilliumMoto Remix)<span>Silentroom Remixed by BilliumMoto</span></li>
+              <li><i>6</i>Angel Echo -L'appel du vide-<span>Silentroom Remixed by Frums</span></li>
+              <li><i>7</i>Variations on Silent Rhapsody<span>Silentroom Arranged by Sobrem</span></li>
+              <li><i>8</i>In My Heart (Reprise)<span>Silentroom</span></li>
+              <li><i>9</i>In My Heart -discovered-<span>Silentroom Arranged by ゆうゆ</span></li>
+              <li><i>10</i>虹が降る街<span><em>The City Where The Rainbow Ends</em></span><q>Silentroom & やどりぎ</q></li>
+            </ul>
+          </div>
+          <div id="lisence">
+            "晨星ト鵺 ("Daybreaker" Full Version)" only appears on the physical CD and is not included in the digitally-distributed version of the album.
+            <br>
+            “Fallensquare”, “Aegleseeker” © lowiro
+            <br>
+            “Untrodden Morn” © MUSYNC/MUSYNX
+            <br>
+            “X7124” © SEGA
+            <br>
+            “晨星ト鵺” © 2021 NIPPON COLUMBIA CO.,LTD
+          </div>
+        </div>
+        <h1>Movie</h1>
+        <div class="inner">
+          <div id="youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FNGtVVpmKo0?showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="infoartwork">
+        <h1>Info</h1>
+        <div class="inner">
+          <div id="artwork">
+            <p><a href="img/artwork.jpg" target="_blank"><img src="img/artwork.jpg" alt="Artwork"></a></p>
+          </div>
+          <div id="info">
+            <h2>
+              2022.04.24
+              <span>M3-2022 Spring</span>
+              <strong><i>第二展示場2F サ-17b</i> Silentroom</strong>
+            </h2>
+            <div class="prices">
+              <div class="serial">SLRM-0003, SLRM-0004</div>
+              <span>2,500 yen</span> (Event) / <span>3,080 yen</span> (Shop)
+              <ul>
+                <li><a href="https://diverse.direct/silentrm-net/slrm-0003/">Diverse Direct</a></li>
+                <li><a href="https://www.tanocstore.net/shopdetail/000000002948/">TANO*C STORE</a></li>
+                <li><a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=1436964">メロンブックス</a></li>
+                <li><a href="https://slrm.bandcamp.com/album/in-my-heart">bandcamp</a></li>
+                <li><a href="https://linkco.re/05h9ZNVN">Part 1</a></li>
+                <li><a href="https://linkco.re/2tUtGv0N">Part 2</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="staff">
+            <h3 class="staff">Staff</h3>
+            <dl>
+              <dt>Total Sound Compose</dt>
+              <dd>Silentroom</dd>
+            </dl>
+            <dl>
+              <dt>Illustration</dt>
+              <dd>蟹江</dd>
+            </dl>
+            <dl>
+              <dt>Total Design</dt>
+              <dd>レク</dd>
+            </dl>
+            <dl>
+              <dt>Guest Composer</dt>
+              <dd>Frums</dd>
+            </dl>
+            <dl>
+              <dt>Guest Composer</dt>
+              <dd>Sobrem</dd>
+            </dl>
+            <dl>
+              <dt>Guest Composer</dt>
+              <dd>やどりぎ</dd>
+            </dl>
+            <dl>
+              <dt>Guest Composer</dt>
+              <dd>ゆうゆ</dd>
+            </dl>
+            <dl>
+              <dt>Teaser Video</dt>
+              <dd>駿</dd>
+            </dl>
+          </div>
+          <div id="copyright_sns">
+            <div id="sns">
+              <ul>
+                <li><a href="https://silentrm.net/"><img src="img/silentroom.png" alt="Silentroom"></a></li>
+                <li><a href="https://twitter.com/intent/tweet?original_referer=https://inmyheart.silentrm.net/&text=In%20My%20Heart%20/%20Silentroom%202nd%20Artist%20Album%20/%20M3%20SPRING%202022.4.24(Sun)%20%E3%82%B5-17b%20https://inmyheart.silentrm.net/" class="tw"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="http://www.facebook.com/sharer.php?u=https://inmyheart.silentrm.net/" class="fb"><i class="fa fa-facebook"></i></a></li>
+              </ul>
+            </div>
+            <div id="copyright">
+              Webdesign by 2021D2024
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+  <script src="../cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+      var ua = navigator.userAgent.toLowerCase();
+      if (ua.indexOf('trident/7') != -1) {
+        $('#intro').remove();
+      }
+    });
+  </script>
+</body>
+</html>
