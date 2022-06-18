@@ -4,16 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8e7f40d-e5d1-4f6f-adff-c1a867343b10" name="변경" comment="" />
+    <list default="true" id="b8e7f40d-e5d1-4f6f-adff-c1a867343b10" name="변경" comment="change cursor pointer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/common/css/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/common/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/css/sp_layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/common/css/sp_layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2AkCloIv5T4W5pYtog7Pvt0pN3d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,11 +49,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655544352545</updated>
-      <workItem from="1655544354609" duration="7536000" />
+      <workItem from="1655544354609" duration="9941000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change cursor pointer" />
+    <option name="LAST_COMMIT_MESSAGE" value="change cursor pointer" />
   </component>
 </project>

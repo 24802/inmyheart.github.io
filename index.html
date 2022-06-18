@@ -1,7 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head lang="ja">
 
+<div class="cursor"></div>
+<div class="cursor"></div>
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+</script>
+<script>
+  $(document)
+          .mousemove(function(e) {
+            $('.cursor')
+                    .eq(0)
+                    .css({
+                      left: e.clientX,
+                      top: e.clientY
+                    });
+            setTimeout(function() {
+              $('.cursor')
+                      .eq(1)
+                      .css({
+                        left: e.clientX,
+                        top: e.clientY
+                      });
+            }, 100);
+          })
+</script>
+
+<head lang="ja">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89095699-5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -11,6 +37,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-89095699-5');
   </script>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
@@ -19,33 +46,11 @@
 </head>
 <body>
 
-<div class="cursor"></div>
-<script type="text/javascript">
-  const cursor = document.querySelector(".cursor");
-  var timeout;
-
-  //follow cursor on mousemove
-  document.addEventListener("mousemove", (e) => {
-    let x = e.pageX;
-    let y = e.pageY;
-
-    cursor.style.top = y + "px";
-    cursor.style.left = x + "px";
-    cursor.style.display = "block";
-
-    //cursor effects when mouse stopped
-    function mouseStopped(){
-      cursor.style.display = "none";
-    }
-    clearTimeout(timeout);
-    timeout = setTimeout(mouseStopped, 1000);
-  });
-
-  //cursor effects when mouseout
-  document.addEventListener("mouseout", () => {
-    cursor.style.display = "none";
-  });
-</script>
+<style>
+  * {
+    cursor: none;
+  }
+</style>
 
   <div id="intro">
     <p><img src="img/logo_wh.png" alt="INMYHEART"></p>
@@ -57,7 +62,6 @@
       <div id="particles"></div>
     </header>
     <main>
-
       <section id="tracklist">
         <h1>Tracklist</h1>
         <div class="inner">
@@ -199,5 +203,6 @@
       }
     });
   </script>
+
 </body>
 </html>
